@@ -3,7 +3,7 @@ mod advent;
 use advent::Advent;
 
 fn main() {
-    let day = Advent::Day6;
+    let day = Advent::Day7;
 
     day.run();
     println!();
