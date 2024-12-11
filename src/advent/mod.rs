@@ -10,7 +10,7 @@ mod p07;
 mod p08;
 mod p09;
 mod p10;
-// mod p11;
+mod p11;
 // mod p12;
 // mod p13;
 // mod p14;
@@ -70,7 +70,7 @@ impl Advent {
             Advent::Day8 => p08::CONFIG,
             Advent::Day9 => p09::CONFIG,
             Advent::Day10 => p10::CONFIG,
-            // Advent::Day11 => p11::CONFIG,
+            Advent::Day11 => p11::CONFIG,
             // Advent::Day12 => p12::CONFIG,
             // Advent::Day13 => p13::CONFIG,
             // Advent::Day14 => p14::CONFIG,
