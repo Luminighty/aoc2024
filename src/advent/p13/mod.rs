@@ -11,7 +11,7 @@ mod machine;
 pub fn solve_a() {
     let machines = unwrap!(input::get_input());
     let mut sum = 0;
-    for (i, machine) in machines.into_iter().enumerate() {
+    for (_i, machine) in machines.into_iter().enumerate() {
         let min = machine.into_iter()
             .map(|win| win.cost())
             .min();
@@ -26,7 +26,7 @@ pub fn solve_a() {
 pub fn solve_b() {
     let machines = unwrap!(input::get_input());
     let mut sum = 0;
-    for (i, mut machine) in machines.into_iter().enumerate() {
+    for (_i, mut machine) in machines.into_iter().enumerate() {
         machine.fix_prize();
         let a = machine.cram_a();
         let a = a.map(|a| machine.get_b(a)).flatten();

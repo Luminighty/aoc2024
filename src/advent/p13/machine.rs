@@ -94,8 +94,7 @@ impl IntoIterator for Machine {
 	type Item = Press;
 
 	fn into_iter(self) -> Self::IntoIter {
-		let mut a_press = self.prize.x / self.btn_a.x + 1;
-
+		let a_press = self.prize.x / self.btn_a.x + 1;
 		WinIter { a_press, machine: self }
 	}
 }
