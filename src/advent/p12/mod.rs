@@ -1,4 +1,4 @@
-use std::{collections::{HashMap, HashSet}, i32};
+use std::{collections::HashSet, i32};
 
 use garden::Garden;
 
@@ -143,7 +143,7 @@ pub fn solve_b() {
 		//println!("Area {area:?}");
 		let h_sides = get_area_sides(area, 1, 0);
 		let v_sides = get_area_sides(area, 0, 1);
-		let (x, y) =  area.iter().next().unwrap();
+		let (_x, _y) =  area.iter().next().unwrap();
 		//println!("{:?} = {} * {}", garden.get(*x, *y), h_sides + v_sides, area.len());
 		cost += (h_sides + v_sides) * area.len();
 	}
