@@ -55,7 +55,6 @@ fn add_possible_patterns(patterns: &mut LenMap, length: usize) {
 			}
 		}
 	}
-	println!("{new_patterns:?}");
 	
 	for (pattern, count) in new_patterns.into_iter() {
 		patterns.add(pattern, count);
